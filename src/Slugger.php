@@ -1,19 +1,21 @@
 <?php
 
-namespace GeoSocio\Core\Utils;
+namespace GeoSocio\Slugger;
 
 /**
  * Slug Utility.
  */
-class Slug
+class Slugger
 {
 
     /**
      * Generates a slug from a string.
      *
      * @param string $text
+     *
+     * @return string
      */
-    public static function create(string $text) : string
+    public function slug(string $text) : string
     {
         $slug = trim($text);
         $slug = mb_strtolower($slug);

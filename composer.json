@@ -1,0 +1,36 @@
+{
+    "name": "geosocio/slugger",
+    "description": "Creates URL Slugs from Strings",
+    "type": "library",
+    "license": "LGPL-3",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+          "GeoSocio\\Slugger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "GeoSocio\\Slugger\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpunit/phpunit": "^6.2",
+        "symfony/var-dumper": "^3.3"
+    },
+    "scripts": {
+        "lint": [
+          "phpcs --colors ."
+        ],
+        "test": [
+            "@lint",
+            "phpunit -v"
+        ],
+        "test-coverage": [
+            "@lint",
+            "phpunit -v --coverage-clover coverage.clover"
+        ]
+    }
+}
