@@ -5,15 +5,11 @@ namespace GeoSocio\Slugger;
 /**
  * Slug Utility.
  */
-class Slugger
+class Slugger implements SluggerInterface
 {
 
     /**
-     * Generates a slug from a string.
-     *
-     * @param string $text
-     *
-     * @return string
+     * {@inheritdoc}
      */
     public function slug(string $text) : string
     {
