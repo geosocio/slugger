@@ -2,7 +2,7 @@
     "name": "geosocio/slugger",
     "description": "Creates URL Slugs from Strings",
     "type": "library",
-    "license": "LGPL-3",
+    "license": "LGPL-3.0",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
